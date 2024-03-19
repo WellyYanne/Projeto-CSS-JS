@@ -30,6 +30,7 @@ body {
   background-size: cover;*/
   /*pode ser usada as duas formas a mais resumida, ou seja, todos os comandos em uma unica linha ou colocar um por linha.*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -38,8 +39,9 @@ body * {
 
 #container {
   width: 360px;
+  max-width: 588px;
   /*border: 1px solid red;*/
-  margin: 56px auto;
+  margin: 56px auto 0px;
   padding: 0 24px;
 }
 
@@ -70,13 +72,13 @@ body * {
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   z-index: 1;
   transform: translateY(-50%);
 }
+
 .light #switch button {
   right: 0;
   left: initial;
