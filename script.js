@@ -12,8 +12,4 @@ if(html.classList.contains('light')){
  img.setAttribute("src", "./assets/avatarzinho.png")
 }
 
-
-
-
-
 }
