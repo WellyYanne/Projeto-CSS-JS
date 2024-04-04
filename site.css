@@ -1,0 +1,68 @@
+body, html{
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 10px;
+  height: 15px;
+ 
+}
+
+#canto {
+  position: fixed;
+  top: 20%; /* Define a posição no meio verticalmente */
+  right: 0; /* Ajusta a posição para a direita */
+  transform: translateY(-50%); /* Move o elemento de volta metade da sua altura para cima para centralizá-lo verticalmente */
+  background-color:transparent;
+   opacity: 0.4;
+}
+
+
+#canto1 {
+  position: fixed;
+  bottom: 10; /* Ajusta a posição para a parte inferior */
+  left: 0; /* Ajusta a posição para a esquerda */
+  transform: translateY(-50%);
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+
+
+.container{
+position: relative;
+}
+
+input{
+  width: auto;
+  position: fixed;
+  bottom: 10; 
+}
+
+#switch {
+  position: relative;
+  width: 60px;
+  margin: 250px auto;
+}
+
+#switch button {
+  width: 30px; /* Ajusta o tamanho do botão */
+  height: 30px; /* Ajusta o tamanho do botão */
+  border: none;
+
+  background-color: transparent;
+}
+
+button {
+    position: absolute; /* Posicionamento absoluto em relação ao container */
+    right: -120px;
+    top: 0;
+    background: none;
+    border: none;
+ 
+ 
+}
