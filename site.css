@@ -1,68 +1,65 @@
-body, html{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body, html {
   height: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-input{
-  width: 10px;
-  height: 15px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pesquisa-container{
+  position: relative;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 450px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px;
+ padding-right: 40px;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
  
+}
+
+#canto, #canto1 {
+  position: fixed;
+  opacity: 0.5;
 }
 
 #canto {
-  position: fixed;
-  top: 20%; /* Define a posição no meio verticalmente */
-  right: 0; /* Ajusta a posição para a direita */
-  transform: translateY(-50%); /* Move o elemento de volta metade da sua altura para cima para centralizá-lo verticalmente */
-  background-color:transparent;
-   opacity: 0.4;
+  top: 20%;
+  right: 0;
 }
-
 
 #canto1 {
-  position: fixed;
-  bottom: 10; /* Ajusta a posição para a parte inferior */
-  left: 0; /* Ajusta a posição para a esquerda */
-  transform: translateY(-50%);
-  background-color: transparent;
-  opacity: 0.4;
+  bottom: 55px;
+  left: 0;
 }
 
 
 
-.container{
-position: relative;
-}
-
-input{
-  width: auto;
-  position: fixed;
-  bottom: 10; 
-}
-
-#switch {
-  position: relative;
-  width: 60px;
-  margin: 250px auto;
-}
-
-#switch button {
-  width: 30px; /* Ajusta o tamanho do botão */
-  height: 30px; /* Ajusta o tamanho do botão */
-  border: none;
-
-  background-color: transparent;
-}
-
-button {
-    position: absolute; /* Posicionamento absoluto em relação ao container */
-    right: -120px;
-    top: 0;
-    background: none;
-    border: none;
- 
- 
-}

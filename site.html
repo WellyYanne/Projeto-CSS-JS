@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FindBooks</title>
     <link rel="stylesheet" href="site.css" />
+    <script src="site.js"></script>
   </head>
   <body>
-   <pre>
+    <pre>
+      
     <div class="container">
-    <input type="text" placeholder="Digite o livro">
-    <div id="switch" ></div>
-        <button id="botao" onclick="buscarLivro()"><img src="assets/lupa.png" alt="Uma lupa de pesquisa" width="20" height="20"></button>
+      <div class="pesquisa-container">
+    <input type="text" placeholder="Digite o livro" id="inputLivro">
+    <button id="botao" onclick="buscarLivro()"><img src="assets/lupa.png" alt="Uma lupa de pesquisa" width="20" height="20"></button>
+    </div>
     </div>
     <div id="canto">
       <img
@@ -23,12 +26,12 @@
     </div>
      <script>
         function buscarLivro() {
-            // Aqui você pode adicionar a lógica para buscar o livro
-            var inputLivro = document.querySelector('.container input[type="text"]');
-            var livro = inputLivro.value;
-            alert('Buscando livro: ' + livro);
-            // Adicione aqui a lógica para buscar o livro com base no valor inserido no input
-        }
+      var inputLivro = document.getElementById('inputLivro');
+      var livro = inputLivro.value;
+      // Adicione aqui a lógica para buscar o livro com base no texto inserido no input
+      console.log('Livro buscado:', livro);
+  
+    }
     </script>
     </pre>
   </body>
